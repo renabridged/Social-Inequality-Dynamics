@@ -7,16 +7,12 @@ This model simulates income distribution based on random distribution. The idea 
 
 ## HOW IT WORKS
 
-(what rules the agents use to create the overall behavior of the model)
-
 All agents start in a random position in the environment, are colored gray and have income according to a uniform distribution in the interval 2 * INITIAL-INCOME - INITIAL-INCOME.
 
 An interaction (STEP) of this model has the following rule: a non-interacting agent (gray color) and one of its neighbors (also non-interacting) are randomly selected at a distance initially defined by the INTERACTION-RADIUS slider; for the agent with the lowest income, the two agents bet a percentage (initially defined by the PERCENTAGE-OF-INCOME slider) of that value; the winner will be decided by random choice with equal probability for both. The winning agent updates his income with the value of his old income plus the bet percentage and changes his color to blue (winner). The losing agent (loser) updates his income with his old income minus the bet percentage and changes his color to red. At each interaction, we test whether there are agents with income less than 1. If there are agents with income less than 1, the agent's income is null and its color changes to orange (with-zero-income), but if not there are agents with income less than or equal to 1, nothing is done.
 
 
 ## HOW TO USE IT
-
-(how to use the model, including a description of each of the items in the Interface tab)
 
 Initially, the observer is asked to define the following variables:
 
@@ -37,8 +33,6 @@ After choosing the initial conditions, press the go button.
 
 ## THINGS TO NOTICE
 
-(suggested things for the user to notice while running the model)
-
 In the article, the author proposes an income distribution model when agents do not move and can share their income randomly with all agents in the environment. The author shows that, at the end of the simulation, income distribution obeys a power law implying that the rich get richer and the poor get poorer. However, we don't know what happens when the interactions depend on the distance or the random movement of the agents.
 
 This model attempts to answer the following questions:
@@ -48,7 +42,10 @@ This model attempts to answer the following questions:
 
 ## THINGS TO TRY
 
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
+* What happens to the income distribution when the betting percentage is zero?
+* What happens to the income distribution when the betting percentage is 1?
+* What happens to the income distribution when agents move to a given betting percentage?
+* Activate the monitor to visualize the agents' income.
 
 ## EXTENDING THE MODEL
 
@@ -63,8 +60,6 @@ G = f - u
 when  u = (D-x)/D and f = H - y. D is the number of agents in the environment and H = 1 is the maximum shared cumulative income.
 
 ## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
 
 Note the use of lists in drawing the Lorenz Curve.
 
