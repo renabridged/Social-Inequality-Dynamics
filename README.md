@@ -35,13 +35,11 @@ After choosing the initial conditions, press the go button.
 
 In the article, the author proposes an income distribution model when agents do not move and can share their income randomly with all agents in the environment. The author shows that, at the end of the simulation, income distribution obeys a power law implying that the rich get richer and the poor get poorer. However, we don't know what happens when the interactions depend on the distance or the random movement of the agents.
 
-This model attempts to answer the following questions:
- 
-* What happens to income distribution when interactions take place over short or long distance? 
-* What happens to income distribution when agents move?
-
 ## THINGS TO TRY
 
+This model attempts to answer the following questions:
+
+* What happens to income distribution when interactions take place over short or long distance? 
 * What happens to the income distribution when the betting percentage is zero?
 * What happens to the income distribution when the betting percentage is 1?
 * What happens to the income distribution when agents move to a given betting percentage?
